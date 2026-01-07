@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dana Precision Metals</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+nav {
+  background: #020617;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+header {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #020617, #111827);
+}
+header img {
+  max-width: 130px;
+  margin-bottom: 1rem;
+}
+section {
+  padding: 3rem 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #020617;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+.card h3 {
+  color: #38bdf8;
+}
+ul li {
+  list-style: none;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #1f2933;
+}
+.gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+input, textarea, select {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+button {
+  padding: 0.75rem;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+iframe {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 12px;
+  border: none;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #020617;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+@media (max-width: 768px) {
+  .contact { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#industries">Industries</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#quote">Request Quote</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <img src="logo.png" alt="Dana Precision Metals Logo">
+  <h1>Dana Precision Metals</h1>
+  <p>Precision metal manufacturing built on quality, accuracy, and reliability.</p>
+</header>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="grid">
+  <div class="card"><h3>CNC Machining</h3><p>High-tolerance precision machining for complex components.</p></div>
+  <div class="card"><h3>Metal Fabrication</h3><p>Cutting, forming, welding, and assembly.</p></div>
+  <div class="card"><h3>Custom Manufacturing</h3><p>Built to your exact drawings and specifications.</p></div>
+  <div class="card"><h3>Quality Inspection</h3><p>Strict inspection and traceability on every job.</p></div>
+</div>
+</section>
+
+<section id="industries">
+<h2>Industries We Serve</h2>
+<div class="card">
+<ul>
+<li>Aerospace & Defense</li>
+<li>Automotive & Transportation</li>
+<li>Energy & Power Generation</li>
+<li>Industrial Manufacturing</li>
+<li>Construction & Infrastructure</li>
+<li>OEM & Custom Projects</li>
+</ul>
+</div>
+</section>
+
+<section id="certifications">
+<h2>Certifications & Quality</h2>
+<div class="grid">
+  <div class="card"><h3>ISO 9001</h3><p>Certified quality management systems.</p></div>
+  <div class="card"><h3>AS9100 Ready</h3><p>Aerospace-grade manufacturing standards.</p></div>
+  <div class="card"><h3>Material Traceability</h3><p>Full documentation and compliance.</p></div>
+  <div class="card"><h3>Continuous Improvement</h3><p>Lean manufacturing and process control.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Facility & Work Gallery</h2>
+<div class="grid gallery">
+  <img src="https://via.placeholder.com/600x400?text=CNC+Machining">
+  <img src="https://via.placeholder.com/600x400?text=Fabrication+Shop">
+  <img src="https://via.placeholder.com/600x400?text=Inspection">
+  <img src="https://via.placeholder.com/600x400?text=Finished+Parts">
+</div>
+</section>
+
+<section id="quote">
+<h2>Request a Quote</h2>
+<div class="card">
+<form action="mailto:info@danaprecisionmetals.com" method="post" enctype="text/plain">
+  <input type="text" name="company" placeholder="Company Name" required>
+  <input type="text" name="name" placeholder="Contact Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="material" placeholder="Material Type">
+  <input type="text" name="quantity" placeholder="Quantity">
+  <textarea name="details" rows="5" placeholder="Project Details / Drawing Info"></textarea>
+  <button type="submit">Submit Quote Request</button>
+</form>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact">
+  <form action="mailto:info@danaprecisionmetals.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <iframe src="https://www.google.com/maps?q=industrial+manufacturing+facility&output=embed"></iframe>
+</div>
+</section>
+
+<footer>
+© 2026 Dana Precision Metals · Precision • Quality • Reliability
+</footer>
+
+</body>
+</html>
